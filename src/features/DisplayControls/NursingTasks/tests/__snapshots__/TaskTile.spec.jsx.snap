@@ -1,0 +1,192 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TaskTile should match the snapshot for grouped task 1`] = `
+<DocumentFragment>
+  <div
+    class="tile-parent-container"
+  >
+    <div
+      class="nursing-tasks-tile false
+        "
+    >
+      <div
+        class="tile-content"
+      >
+        <div
+          class="tile-title"
+        >
+          <div
+            class="tile-title undefined"
+          >
+            <div>
+              <div
+                class="nursing-task-icon-container"
+                data-testid="Pending"
+              >
+                <div>
+                  <test-file-stub />
+                </div>
+              </div>
+              <span
+                class="bx--tooltip--definition bx--tooltip--a11y cursor-pointer"
+              >
+                <button
+                  aria-describedby="definition-tooltip-2"
+                  class="bx--tooltip__trigger bx--tooltip--a11y bx--tooltip__trigger--definition bx--tooltip--bottom bx--tooltip--align-start"
+                  type="button"
+                >
+                  <div
+                    class="drug-title"
+                    style="color: rgb(82, 82, 82); font-weight: 400;"
+                  />
+                </button>
+                <span
+                  class="bx--assistive-text"
+                  id="definition-tooltip-2"
+                  role="tooltip"
+                />
+              </span>
+            </div>
+          </div>
+          <div
+            class="bx--tag bx--tag--sm bx--tag--blue"
+            id="tag-2"
+          >
+            <span
+              title="Rx"
+            >
+              Rx
+            </span>
+          </div>
+        </div>
+        <div>
+          <div
+            class="tile-content-subtext"
+            style="color: rgb(82, 82, 82);"
+          >
+            <span />
+          </div>
+          <div
+            class="tile-content-footer"
+          >
+            <div
+              class="tile-date-time"
+            >
+              <test-file-stub />
+              <div
+                class="tile-content-subtext-time"
+              >
+                 Invalid date
+              </div>
+               
+            </div>
+            <div>
+              (1 more)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="nursing-tasks-tile stacked-tile false"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TaskTile should match the snapshot for non grouped task 1`] = `
+<DocumentFragment>
+  <div
+    class="tile-parent-container"
+  >
+    <div
+      class="nursing-tasks-tile false
+        disabled-tile"
+    >
+      <div
+        class="tile-content"
+      >
+        <div
+          class="tile-title"
+        >
+          <div
+            class="tile-title undefined"
+          >
+            <div>
+              <div
+                class="nursing-task-icon-container"
+                data-testid="Administered"
+              >
+                <div>
+                  <test-file-stub />
+                </div>
+              </div>
+              <span
+                class="bx--tooltip--definition bx--tooltip--a11y cursor-not-allowed"
+              >
+                <button
+                  aria-describedby="definition-tooltip-1"
+                  class="bx--tooltip__trigger bx--tooltip--a11y bx--tooltip__trigger--definition bx--tooltip--bottom bx--tooltip--align-start"
+                  type="button"
+                >
+                  <div
+                    class="drug-title"
+                    style="color: rgb(82, 82, 82); font-weight: 400;"
+                  >
+                    Halothane/Fluothane 250 mL Inhalation Anesthetic Liquid
+                  </div>
+                </button>
+                <span
+                  class="bx--assistive-text"
+                  id="definition-tooltip-1"
+                  role="tooltip"
+                >
+                  Halothane/Fluothane 250 mL Inhalation Anesthetic Liquid
+                </span>
+              </span>
+            </div>
+          </div>
+          <div
+            class="bx--tag bx--tag--sm bx--tag--blue"
+            id="tag-1"
+          >
+            <span
+              title="Rx"
+            >
+              Rx
+            </span>
+          </div>
+        </div>
+        <div>
+          <div
+            class="tile-content-subtext"
+            style="color: rgb(82, 82, 82);"
+          >
+            <span>
+              1ml
+            </span>
+            <span>
+               - Oral
+            </span>
+          </div>
+          <div
+            class="tile-content-footer"
+          >
+            <div
+              class="tile-date-time"
+            >
+              <test-file-stub />
+              <div
+                class="tile-content-subtext-time"
+              >
+                 16:00 - 07:23 (actual)
+              </div>
+               
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

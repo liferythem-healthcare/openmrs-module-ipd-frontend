@@ -1,0 +1,44 @@
+.side-bar-header {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.16px;
+  color: #393939;
+}
+
+.close-icon {
+  position: absolute;
+  right: 16px;
+  top: 8px;
+  border: none;
+}
+
+.side-bar-nav {
+  background: white;
+  position: fixed;
+  right: 0 !important;
+  height: 100%;
+  z-index: 9999;
+  overflow: scroll;
+  box-shadow: -1px 2px 3px 0px #aaa;
+}
+
+@media screen and (min-width: 1024px) {
+  .side-bar-nav {
+    width: 30%;
+    min-width: 540px;
+  }
+}
+
+.side-bar-nav {
+  top: 48px;
+}
+@media screen and (max-width: 1055px) {
+  .side-bar-nav {
+    width: 100%;
+  }
+}

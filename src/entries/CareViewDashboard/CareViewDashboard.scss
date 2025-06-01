@@ -1,0 +1,66 @@
+.care-view-page {
+  color: #393939;
+  font-family: "IBM Plex Sans", sans-serif;
+  .main {
+    background-color: white;
+    transition: margin-left 0.5s;
+    width: 100%;
+    top: 48px;
+    left: 0;
+    z-index: 1000;
+    position: absolute;
+    height: 100%;
+    padding: 16px 0;
+  }
+  .care-view-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    color: white;
+  }
+
+  .home {
+    background-color: #007d79;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    padding: 12px 8px;
+    height: 3rem;
+    width: 50px;
+    justify-content: center;
+    &:hover,
+    &:focus {
+      outline: none;
+      background-color: #004144;
+      color: #fff;
+    }
+  }
+
+  .border-bottom-0 {
+    border-bottom: 0;
+  }
+
+  .header-bg-color {
+    background: #007d79;
+  }
+
+  .header-nav-toggle-btn {
+    border: none;
+  }
+
+  .header-nav-toggle-btn:hover {
+    background-color: #007d79;
+    fill: #ffffff;
+    outline: none;
+    border: none;
+  }
+  .care-view-navigations {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: baseline;
+    color: rgb(15, 98, 254);
+    padding: 0 5%;
+  }
+}

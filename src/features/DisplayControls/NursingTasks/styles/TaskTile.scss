@@ -1,0 +1,181 @@
+.nursing-tasks-tile {
+  border: 2px solid #92c4c3;
+  background: #edf8e6;
+  width: 500px;
+  height: 95px;
+  position: relative;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    background-color: #d2e1c9;
+  }
+}
+
+.nonMedicationTile {
+  border: 2px solid #0f62fe;
+  background: #e1f3fe;
+  width: 500px;
+  height: 95px;
+  position: relative;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    background-color: #aedbf7;
+  }
+}
+
+.disabled-tile {
+  border: 2px solid #92c4c3 !important;
+  background-color: #edf8e6 !important;
+  cursor: not-allowed;
+  &:hover {
+    background-color: #edf8e6 !important;
+  }
+}
+
+.non-medication-disabled-tile {
+  border: 2px solid #0f62fe !important;
+  background-color: #e1f3fe !important;
+  cursor: not-allowed;
+  &:hover {
+    background-color: #e1f3fe !important;
+  }
+}
+
+.relevant-task-tile {
+  background-color: #e3fed1;
+  border: 2px solid #007d79;
+
+  &:hover {
+    background-color: #c5eea9;
+  }
+}
+
+.tile-parent-container {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  height: 90px;
+}
+
+.stacked-tile {
+  position: relative;
+  top: -85px;
+  left: 8px;
+  z-index: -1;
+}
+
+.tile-content {
+  padding: 10px 10px 0px 10px;
+}
+
+.red-text {
+  color: #ff0000;
+}
+
+.red-tag {
+  color: #fff;
+  background-color: #ff0000;
+  min-width: 64px;
+  margin: 4px 0;
+}
+
+.tile-title {
+  flex-direction: row;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  > * {
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+  }
+
+  .bx--tooltip__trigger.bx--tooltip__trigger--definition.bx--tooltip--bottom {
+    cursor: unset;
+  }
+}
+
+.drug-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-wrap: wrap;
+  color: #393939;
+  font-style: normal;
+  padding-left: 4px;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 0.14px;
+  text-align: left;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.tile-content-subtext {
+  font-size: 12px;
+  font-weight: 400;
+  color: #393939;
+  letter-spacing: 0.12px;
+  padding: 2px 25px 2px;
+}
+
+.tile-content-footer {
+  width: 475px;
+  position: absolute;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: italic;
+  color: #393939;
+  letter-spacing: 0.12px;
+  align-items: center;
+  display: flex;
+  bottom: 10px;
+  padding-left: 2px;
+  justify-content: space-between;
+  .tile-date-time {
+    display: flex;
+  }
+}
+
+.tile-content-subtext-time {
+  padding-left: 5px;
+}
+
+.nursing-task-icon-container {
+  margin-top: 3px;
+}
+
+.bx--tooltip__trigger.bx--tooltip__trigger--definition {
+  border-bottom: 0;
+}
+
+.bx--tooltip__trigger.bx--tooltip__trigger--definition.bx--tooltip--bottom.bx--tooltip--align-start.bx--tooltip--a11y
+  + .bx--assistive-text {
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0.16px;
+}
+.tile-name-cell {
+  top: 0;
+  position: absolute;
+  right: 0;
+  padding-top: 5px;
+}
+
+.truncate-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 90%;
+}
+
+.tile-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

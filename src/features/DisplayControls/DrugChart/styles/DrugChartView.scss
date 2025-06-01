@@ -1,0 +1,75 @@
+.drugchart-parent-container {
+  .drugchart-shift-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+
+    .margin-right-6 {
+      margin-right: 6px;
+    }
+
+    .margin-right-10 {
+      margin-right: 10px;
+    }
+
+    .bx--btn--expressive {
+      min-height: 32px;
+      padding: 5px 10px;
+      font-size: 14px;
+      line-height: 18px;
+      &:hover,
+      &:focus {
+        color: #fff;
+      }
+    }
+
+    .bx--btn--expressive[disabled] {
+      color: #8d8d8d;
+      border: 1px solid #8d8d8d;
+    }
+  }
+
+  .bx--tooltip__trigger.bx--btn--icon-only--top.bx--tooltip--align-center::before {
+    display: none;
+  }
+
+  .bx--tooltip__trigger.bx--btn--icon-only--top.bx--tooltip--align-center::after {
+    display: none;
+  }
+
+  .bx--tooltip__trigger.bx--btn--icon-only--top.bx--tooltip--align-center
+    .bx--assistive-text {
+    display: none;
+  }
+  .shift-timing {
+    .not-current-shift-message-div {
+      display: flex;
+      align-items: center;
+
+      .not-current-shift-message {
+        padding: 2px;
+        color: #da1e28;
+        line-height: normal;
+        letter-spacing: 0.24px;
+      }
+    }
+    .shift-time {
+      display: flex;
+      font-weight: 600;
+      svg {
+        margin-right: 2px;
+      }
+      .to-text {
+        margin: 0 6px;
+        font-weight: 400;
+      }
+      .mr-5 {
+        margin: 0 5px;
+      }
+    }
+    .shift-title {
+      font-size: 12px;
+    }
+  }
+}

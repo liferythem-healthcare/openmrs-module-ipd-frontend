@@ -1,0 +1,32 @@
+import React from "react";
+import PropTypes from "prop-types";
+import CalendarRow from "./CalendarRow.jsx";
+import "../styles/Calendar.scss";
+export default function Calendar(props) {
+  const { calendarData, currentShiftArray, selectedDate, shiftIndex } = props;
+  return (
+    <table className="drug-chart-calendar">
+      <tbody>
+        {calendarData.map((rowData, index) => {
+          return (
+            <tr key={index}>
+              <CalendarRow
+                rowData={rowData}
+                currentShiftArray={currentShiftArray}
+                selectedDate={selectedDate}
+                shiftIndex={shiftIndex}
+              />
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+  );
+}
+
+Calendar.propTypes = {
+  calendarData: PropTypes.array.isRequired,
+  currentShiftArray: PropTypes.array,
+  selectedDate: PropTypes.instanceOf(Date),
+  shiftIndex: PropTypes.number,
+};
