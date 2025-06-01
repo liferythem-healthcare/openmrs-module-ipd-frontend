@@ -77,7 +77,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           file: package/docker/Dockerfile
           push: true
-          tags: bahmni/microfrontend-ipd:${{ env.ARTIFACT_VERSION }},bahmni/microfrontend-ipd:latest
+          tags: liferythem/microfrontend-ipd:${{ env.ARTIFACT_VERSION }},liferythem/microfrontend-ipd:latest
 
   # 🌍 Push Translations to Transifex
   # push-translations:
