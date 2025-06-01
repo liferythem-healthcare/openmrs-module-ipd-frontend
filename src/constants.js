@@ -17,6 +17,7 @@ export const ADDRESS_HEIRARCHY =
   hostUrl +
   "/openmrs/module/addresshierarchy/ajax/getOrderedAddressHierarchyLevels.form";
 export const homePageUrl = "/healthnet/home/#/dashboard";
+console.log("homePageUrl",homePageUrl)
 
 export const MEDICATIONS_BASE_URL = RESTWS_V1 + "/ipd/schedule/type/medication";
 export const EDIT_MEDICATIONS_BASE_URL =

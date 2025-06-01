@@ -31,6 +31,8 @@ export const searchDrugsByName = async (query) => {
   }
 };
 export const adtHomePageUrl = "/healthnet/adt/#/home";
+console.log("adtHomePageUrl",adtHomePageUrl)
+
 export const clinicalHomePageUrl =
   "/healthnet/clinical/index.html#/default/patient/search";
 export const careViewDashboardUrl = "/healthnet/adt/#/home/careViewDashboard";
