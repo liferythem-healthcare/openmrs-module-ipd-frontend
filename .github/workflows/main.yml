@@ -71,15 +71,13 @@ jobs:
           password: L!ferythem@2025
 
       - name: 🐳 Build & Push Docker Image
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v3
         with:
           context: .
           platforms: linux/amd64,linux/arm64
           file: package/docker/Dockerfile
           push: true
-          tags: |
-            bahmni/microfrontend-ipd:${{ env.ARTIFACT_VERSION }}
-            bahmni/microfrontend-ipd:latest
+          tags: bahmni/microfrontend-ipd:${{ env.ARTIFACT_VERSION }},bahmni/microfrontend-ipd:latest
 
   # 🌍 Push Translations to Transifex
   # push-translations:
