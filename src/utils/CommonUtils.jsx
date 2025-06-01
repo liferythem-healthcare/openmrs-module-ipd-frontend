@@ -11,17 +11,17 @@ import {
 } from "../constants";
 import { FormattedMessage } from "react-intl";
 export const getPatientDashboardUrl = (patientUuid) =>
-  `/bahmni/clinical/#/default/patient/${patientUuid}/dashboard?currentTab=DASHBOARD_TAB_GENERAL_KEY`;
+  `/healthnet/clinical/#/default/patient/${patientUuid}/dashboard?currentTab=DASHBOARD_TAB_GENERAL_KEY`;
 
 export const getIPDPatientDashboardUrl = (
   patientUuid,
   visitUuid,
   source = "clinical"
 ) =>
-  `/bahmni/clinical/#/default/patient/${patientUuid}/dashboard/visit/ipd/${visitUuid}?source=${source}`;
+  `/healthnet/clinical/#/default/patient/${patientUuid}/dashboard/visit/ipd/${visitUuid}?source=${source}`;
 
 export const getADTDashboardUrl = (patientUuid, visitUuid, encounterUuid) =>
-  `/bahmni/adt/#/patient/${patientUuid}/visit/${visitUuid}/encounter/${encounterUuid}/bed`;
+  `/healthnet/adt/#/patient/${patientUuid}/visit/${visitUuid}/encounter/${encounterUuid}/bed`;
 
 export const searchDrugsByName = async (query) => {
   try {
@@ -30,10 +30,10 @@ export const searchDrugsByName = async (query) => {
     console.error(e);
   }
 };
-export const adtHomePageUrl = "/bahmni/adt/#/home";
+export const adtHomePageUrl = "/healthnet/adt/#/home";
 export const clinicalHomePageUrl =
-  "/bahmni/clinical/index.html#/default/patient/search";
-export const careViewDashboardUrl = "/bahmni/adt/#/home/careViewDashboard";
+  "/healthnet/clinical/index.html#/default/patient/search";
+export const careViewDashboardUrl = "/healthnet/adt/#/home/careViewDashboard";
 
 export const getAppLandingPageUrl = (source) => {
   switch (source) {

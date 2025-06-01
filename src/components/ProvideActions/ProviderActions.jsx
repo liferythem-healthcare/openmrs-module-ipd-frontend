@@ -17,7 +17,7 @@ export const ProviderActions = (props) => {
   const cookies = getCookies();
   const username = cookies["bahmni.user"]?.replace(/^"(.*)"$/, "$1");
   const handleChangePassword = () => {
-    window.location = "/bahmni/home/#/changePassword";
+    window.location = "/healthnet/home/#/changePassword";
   };
   const handleMenu = () => {
     setIsDropdownOpen(!isDropdownOpen);

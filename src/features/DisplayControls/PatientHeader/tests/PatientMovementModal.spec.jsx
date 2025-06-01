@@ -219,7 +219,7 @@ describe("PatientMovementModal", () => {
   it("should save patient movement modal for admit patient", async () => {
     Object.defineProperty(window, "location", {
       value: {
-        href: "/bahmni/adt/#/patient/patientMockUuid/visit/visitMockUuid/encounter/encounterUuid/bed",
+        href: "/healthnet/adt/#/patient/patientMockUuid/visit/visitMockUuid/encounter/encounterUuid/bed",
       },
     });
     render(
@@ -338,7 +338,7 @@ describe("PatientMovementModal", () => {
     );
     Object.defineProperty(window, "location", {
       value: {
-        href: "/bahmni/adt/#/patient/patientMockUuid/visit/visitMockUuid/encounter/encounterUuid/bed",
+        href: "/healthnet/adt/#/patient/patientMockUuid/visit/visitMockUuid/encounter/encounterUuid/bed",
       },
     });
     const transferMethodCall = jest.fn();
@@ -411,7 +411,7 @@ describe("PatientMovementModal", () => {
     );
     Object.defineProperty(window, "location", {
       value: {
-        href: "/bahmni/adt/#/patient/patientMockUuid/visit/visitMockUuid/encounter/encounterUuid/bed",
+        href: "/healthnet/adt/#/patient/patientMockUuid/visit/visitMockUuid/encounter/encounterUuid/bed",
       },
     });
     render(
